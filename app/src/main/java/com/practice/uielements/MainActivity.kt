@@ -28,6 +28,24 @@ class MainActivity : AppCompatActivity() {
         binding.showAlertDialogRounded.setOnClickListener { showAlertDialogRounded() }
 
         binding.showBottomSheet.setOnClickListener { showBottomSheet() }
+
+        binding.bottomNav.setOnNavigationItemSelectedListener {
+            when (it.itemId) {
+                R.id.menu_home -> {
+                    true
+                }
+                R.id.menu_notification -> {
+                    true
+                }
+                R.id.menu_search -> {
+                    true
+                }
+                R.id.menu_profile -> {
+                    true
+                }
+                else -> false
+            }
+        }
     }
 
     private fun showAlert() {
@@ -91,7 +109,12 @@ class MainActivity : AppCompatActivity() {
         val dialog = BottomSheetDialog(this)
         dialog.setContentView(R.layout.layout_bottom_sheet)
         val closeBtn = dialog.findViewById<View>(R.id.ivClose)
+        val orderBtn = dialog.findViewById<View>(R.id.orderButton)
         closeBtn!!.setOnClickListener {
+            dialog.dismiss()
+        }
+        orderBtn!!.setOnClickListener {
+            Toast.makeText(applicationContext, "Order Places Successfully", Toast.LENGTH_SHORT)
             dialog.dismiss()
         }
         dialog.show()

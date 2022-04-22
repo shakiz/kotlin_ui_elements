@@ -3,8 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Shakil/Personal Files and Projects/KotlinUIElements/app/src/main/res/drawable/ic_add.xml" value="0.304" />
+        <entry key="..\:/Shakil/Personal Files and Projects/KotlinUIElements/app/src/main/res/drawable/ic_home.xml" value="0.304" />
+        <entry key="..\:/Shakil/Personal Files and Projects/KotlinUIElements/app/src/main/res/drawable/ic_minus_24.xml" value="0.304" />
+        <entry key="..\:/Shakil/Personal Files and Projects/KotlinUIElements/app/src/main/res/drawable/ic_notification.xml" value="0.304" />
+        <entry key="..\:/Shakil/Personal Files and Projects/KotlinUIElements/app/src/main/res/drawable/ic_person.xml" value="0.304" />
+        <entry key="..\:/Shakil/Personal Files and Projects/KotlinUIElements/app/src/main/res/drawable/ic_search.xml" value="0.304" />
         <entry key="..\:/Shakil/Personal Files and Projects/KotlinUIElements/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Shakil/Personal Files and Projects/KotlinUIElements/app/src/main/res/layout/dialog_layout_rounded.xml" value="0.36666666666666664" />
+        <entry key="..\:/Shakil/Personal Files and Projects/KotlinUIElements/app/src/main/res/layout/layout_bottom_sheet.xml" value="0.36666666666666664" />
+        <entry key="..\:/Shakil/Personal Files and Projects/KotlinUIElements/app/src/main/res/menu/bottom_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/BS846/AppData/Local/Android/Sdk/platforms/android-32/data/res/drawable/btn_minus.xml" value="0.304" />
       </map>
     </option>
   </component>

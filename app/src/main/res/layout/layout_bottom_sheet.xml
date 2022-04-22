@@ -68,13 +68,16 @@
         android:layout_height="24dp"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:src="@drawable/ic_add"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvAddToCart"/>
 
     <TextView
         android:id="@+id/tvQtyCount"
         android:layout_width="24dp"
         android:layout_height="24dp"
+        android:layout_marginTop="16dp"
         android:textColor="@color/black"
         app:layout_constraintRight_toLeftOf="@id/tvQtyAdd"
         app:layout_constraintLeft_toRightOf="@id/tvQtyMinus"
@@ -82,15 +85,27 @@
         android:gravity="center"
         android:text="0"/>
 
-    <TextView
+    <ImageView
         android:id="@+id/tvQtyAdd"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginRight="16dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
         android:src="@drawable/ic_minus_24"
         app:layout_constraintTop_toBottomOf="@id/tvAddToCart"
         app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/orderButton"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:text="@string/place_order"
+        app:layout_constraintTop_toBottomOf="@id/tvQtyAdd"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

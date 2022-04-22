@@ -6,4 +6,5 @@
     <string name="bottom_sheet_description">Kotlin bottom sheet with its additional description.Pass any message through it.</string>
     <string name="title">Bottom Sheet Title</string>
     <string name="add_to_cart">Add To Cart</string>
+    <string name="place_order">Place Order</string>
 </resources>
