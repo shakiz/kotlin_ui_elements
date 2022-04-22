@@ -3,4 +3,7 @@
     <string name="close">Close</string>
     <string name="dialog_header">Custom Rounded Corner Dialog</string>
     <string name="dialog_description">Custom Rounded Corner Dialog with its additional description.Pass any message through it.</string>
+    <string name="bottom_sheet_description">Kotlin bottom sheet with its additional description.Pass any message through it.</string>
+    <string name="title">Bottom Sheet Title</string>
+    <string name="add_to_cart">Add To Cart</string>
 </resources>

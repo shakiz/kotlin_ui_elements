@@ -5,11 +5,16 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.coordinatorlayout.widget.CoordinatorLayout
+import com.google.android.material.bottomsheet.BottomSheetBehavior
+import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.practice.uielements.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
+    private lateinit var bottomSheetBehavior: BottomSheetBehavior<ConstraintLayout>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,6 +26,8 @@ class MainActivity : AppCompatActivity() {
         binding.showBasicAlert.setOnClickListener { showBasicAlert() }
 
         binding.showAlertDialogRounded.setOnClickListener { showAlertDialogRounded() }
+
+        binding.showBottomSheet.setOnClickListener { showBottomSheet() }
     }
 
     private fun showAlert() {
@@ -78,5 +85,15 @@ class MainActivity : AppCompatActivity() {
             .setView(R.layout.dialog_layout_rounded)
             .show()
         dialog.findViewById<View>(R.id.closeButton)!!.setOnClickListener { dialog.dismiss() }
+    }
+
+    private fun showBottomSheet(){
+        val dialog = BottomSheetDialog(this)
+        dialog.setContentView(R.layout.layout_bottom_sheet)
+        val closeBtn = dialog.findViewById<View>(R.id.ivClose)
+        closeBtn!!.setOnClickListener {
+            dialog.dismiss()
+        }
+        dialog.show()
     }
 }
